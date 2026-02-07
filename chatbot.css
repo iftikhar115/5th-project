@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(109, 7, 24), #080538);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, rgb(6, 102, 119), rgba(13, 85, 4, 0.76));
+}
+
+.footer {
+    background: linear-gradient(to bottom, rgb(4, 4, 56), black);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer a {
+    color: #eef1ee;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: aqua;
+}

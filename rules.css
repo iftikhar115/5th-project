@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, yellow, rgb(32, 28, 1));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.main {
+    height: 350px;
+    background: linear-gradient(to left, rgb(40, 40, 70), rgb(70, 90, 16));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer a {
+    color: #eef1ee;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: aqua;
+}

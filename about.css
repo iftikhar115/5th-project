@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #0a0a23;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1dd1a1;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    background: linear-gradient(to right, green, blue);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 30px 20px;
+    color: rgb(10, 9, 9);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.skills-box,
+.exoprties-box,
+.other-hand-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: linear-gradient(to right, rgb(0, 128, 49), rgb(12, 12, 151));
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skills-box:hover,
+.exoprties-box:hover,
+.other-hand-box:hover {
+    transform: translateY(-5px);
+}
+
+.skills-box h2,
+.exoprties-box h3,
+.other-hand-box h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.exoprties-box h3 {
+    font-size: 1.6rem;
+}
+
+ul {
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    border-radius: 1rem;
+    padding: 20px 30px;
+    margin-top: 15px;
+    background: linear-gradient(to right, rgb(255, 0, 234), red);
+    list-style-position: inside;
+}
+
+ul li {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+ul:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+/* SKILL SECTION FIX */
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.skill-visuals {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+img[alt="canva designing"],
+img[alt="video editing"] {
+    width: 100%;
+    max-width: 450px;
+    height: 280px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 30px;
+    background: linear-gradient(to right, #0e0706, #dd2476);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-text h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skill-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 30px;
+        margin-right: 10px;
+    }
+
+    .search-bar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin: 10px auto;
+        gap: 20px;
+    }
+
+    .search-bar {
+        margin-right: 0;
+        width: 180px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-box,
+    .exoprties-box,
+    .other-hand-box {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .skill {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        width: 150px;
+    }
+
+    .search-bar input {
+        width: 120px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    img[alt="canva designing"],
+    img[alt="video editing"] {
+        height: 200px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+.learn-more {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: linear-gradient(to right, #047009, #af2d06);
+    color: #f8f6f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background: linear-gradient(to right, #0ff0c4, #ff00bb);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer a {
+    color: #eef1ee;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: aqua;
+}

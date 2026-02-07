@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(133, 36, 52), blue);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main {
+    height: 350px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(119, 119, 10), rgb(4, 43, 48));
+
+}
+
+.main :hover {
+    background: linear-gradient(to right, rgb(29, 2, 2), rgb(4, 177, 177));
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer a {
+    color: #eef1ee;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
